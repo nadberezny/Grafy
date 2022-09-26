@@ -1,13 +1,10 @@
-package com.company;
+package ua.havrysh;
 import java.awt.*;
 import javax.swing.JFrame;
 import java.util.*;
 import java.util.LinkedList;
 
-public class Eulerian_circuit extends Graph{
-    Eulerian_circuit(int v) {
-        super(v);
-    }
+public class Eulerian_circuit {
 
     // A function used by DFS
     void DFSUtil(int v,boolean visited[])
