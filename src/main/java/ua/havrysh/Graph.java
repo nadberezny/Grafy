@@ -12,7 +12,11 @@ public class Graph {
         this.root = root;
     }
 
-    Graph addEdge(int from, int to) {
-        return new Graph(root.traverse(from, n -> n.to(to)));
+    public Node getRoot() {
+        return root;
+    }
+
+    public Graph addEdge(int from, int to) {
+        return new Graph(root.applyFor(from, n -> n.to(to)));
     }
 }

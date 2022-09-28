@@ -56,6 +56,7 @@ public class Main {
 //        g4.addEdge(1, 2);
 //        g4.addEdge(2, 0);
 //        g4.test();
+
 //
 //        // vertices with zero degree
 //        Eulerian_circuit g5 = new Eulerian_circuit(3);
@@ -72,6 +73,8 @@ public class Main {
                         )
                 );
 
+        var c = new Eulerian_circuit();
+
 
 //        Graphviz.fromGraph(g).height(100).render(Format.PNG).toFile(new File("example/ex1.png"));
 //        var rendered = Graphviz.fromGraph(g).height(100).render(Format.JSON);
@@ -82,6 +85,7 @@ public class Main {
                 .addEdge(0, 1)
                 .addEdge(1, 2)
                 .addEdge(2, 0);
+        var yy = c.isEulerian(gg.getRoot());
         var y = x;
 //        System.out.println(y);
     }
